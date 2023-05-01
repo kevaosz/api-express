@@ -13,3 +13,9 @@ app.get('/guitar', (req, res) => {
     price: '$2000'
   })
 })
+
+app.get('/secret', (req, res) => {
+  res.status(200).send({
+    secret: 'secret_place㊙'
+  })
+})
